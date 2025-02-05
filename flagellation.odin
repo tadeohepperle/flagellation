@@ -1,4 +1,4 @@
-package flaggelation
+package flagellation
 import "core:fmt"
 import "core:strings"
 import "core:testing"
@@ -153,7 +153,7 @@ _read_until_token :: proc(cursor: Cursor, stop_tokens: TokenSet) -> (res: string
 	n_bytes := 0
 	for {
 		if len(cursor) == 0 {
-			return str[n_bytes:], .NoToken
+			return str[:n_bytes], .NoToken
 		}
 		cur_ru, size := utf8.decode_rune_in_string(cursor^)
 		token = _rune_to_token(cur_ru)

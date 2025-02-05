@@ -1,4 +1,4 @@
-package flaggelation
+package flagellation
 import "core:fmt"
 import "core:testing"
 @(test)
